@@ -1,0 +1,158 @@
+/* font-family: "Mighty Ditey NF W01 Regular"; */
+/* font-family: 'Neue Haas Grotesk Display Pro'; */
+/* font-family: 'Noto Sans KR', sans-serif;*/
+
+
+html { font-size: 10px; position: relative;}
+
+body { margin: 0 auto; position: relative;}
+
+/* header */
+nav { font-family: 'Neue Haas Grotesk Display Pro'; color: black; font-weight: 600; font-size: 20px; /* display: none; */    position: sticky; top: 0; left: 0; background-color: #fff; z-index: 10;}
+nav > ul { width: 56.8vw; margin: 0 auto;  display: flex; flex-direction: row; justify-content: space-between; align-items: center; border-bottom: 3px solid #fff;
+    padding: 30px 0;}
+nav > ul > li { flex: 1;}
+nav > ul > li:nth-child(2) { text-align: center;}
+nav > ul > li:nth-child(3) { text-align: right;}
+.animate__animated.animate__fadeIn:nth-child(1) {animation-delay:0.2s;}
+.animate__animated.animate__fadeIn:nth-child(2) {animation-delay:0.4s;}
+.animate__animated.animate__fadeIn:nth-child(3) {animation-delay:0.6s;}
+
+/* menu */
+.menu { position: fixed; top: -100%; left: 0; transition: 0.4s; background-color: #000; color: #fff; width: 100vw; height: 100vh; z-index: 15;}
+.menu_area {width: 56.8vw; margin: 0 auto;}
+
+.menu_title {width: 56.8vw; margin-top: 30px; font-family: 'Neue Haas Grotesk Display Pro'; color: #fff; font-weight: 600; font-size: 20px; }
+.menu_title > ul { display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
+.menu_title > ul > li {flex: 1;}
+.menu_title > ul > li:nth-child(2) { text-align: right;}
+.menu_title > .title_text {width: 100%; margin-top: 30px; border-top: 3px solid #fff; border-bottom: 3px solid #fff;}
+.menu_title > .title_text > img { width: 100%; margin: 30px 0; }
+
+/* circle rotate */
+nav > ul > li:nth-child(2):hover {animation: rotate_image 3s linear infinite;
+transform-origin: 50% 50%;}
+.menu_title > ul > li:last-child > img:hover{animation: rotate_image 3s linear infinite;transform-origin: 50% 50%;}
+@keyframes rotate_image {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.menu_content_box { width: 100%; height: 630px; }
+.menu_content { width: 100%; height: 510px; display: flex; flex-direction: row; justify-content: space-between; border-bottom: 3px solid #fff}
+.menu_content > ul { padding: 60px 0; font-family: 'Neue Haas Grotesk Display Pro'; color: #fff; font-weight: 600; font-size: 50px; line-height: 63px; display: flex; flex-direction: column;}
+.menu_content > ul > li { padding-bottom: 50px; text-underline-position: under; }
+
+.menu-pic { width: 37%; height: 70%; padding-top: 6%;}
+.menu-pic > img { width: 100%; height: 100%;}
+
+.menu-footer { font-size: 1.3rem; line-height: 2rem; font-family: 'Neue Haas Grotesk Display Pro'; color: #fff; text-align: center; padding-top: 30px;}
+
+/* main */
+.main { width: 100vw;/*  display: none; */}
+.main-box {width: 56.8vw; margin: 0 auto;}
+.main-title { width: 100%; border-top: 3px solid black;
+    transform-origin: bottom left; transform: scaleX(0);
+    border-bottom: 3px solid black; transition-delay: 0.8s;}
+.main-title  > img { width: 100%; margin: 30px 0; }
+
+.main-pic { width: 100%; margin-top: 85px; border: 3px solid black; transform-origin: bottom left; transform: scaleX(0); transition-delay: 1s;}
+.main-pic > img { width: 100%; height: 100%;}
+
+.main-text { width: 100%; font-size: 9rem; font-weight: 600;
+    font-family: 'Neue Haas Grotesk Display Pro'; margin: 85px 0; text-align: center;}
+
+.video-box { width: 100%;}
+.video-box > video {width: 100%;}
+
+.main-info { width: 100%; height: 200px;}
+.main-info > ul { font-family: 'Neue Haas Grotesk Display Pro'; font-size: 1.5rem; line-height: 2.4rem; font-weight: 800; text-align: center; margin-top: 65px;}
+
+/* about */
+.about { width: 100vw; display: none;}
+.about-box { width: 56.8vw; margin: 0 auto;}
+.about-title { width: 100%; margin-top: 30px; border-top: 3px solid black;
+    border-bottom: 3px solid black; transform-origin: bottom left; transform: scaleX(0);
+}
+.about-title > img { width: 100%; margin: 30px 0; }
+
+.about-img {width: 30%; margin: 70px auto;}
+.about-img > video { width: 100%;}
+
+.brand-text { text-align: center; font-family: 'Neue Haas Grotesk Display Pro';     font-size: 2.2rem; line-height: 3.2rem; color: #000; margin-bottom: 70px;}
+.icon-area { width: 100%; display: flex; flex-direction: row; justify-content: center;}
+.icon-area > a {padding: 2% 4% 10% 0;}
+
+
+/* shop */
+.shop { width: 100vw; height: 100vh; overflow: scroll; background-color: #000; color: #fff; display: none;}
+.shop-box { width: 56.8vw; margin: 0 auto;}
+.shop-title {width: 100%; height: 100px; border-top: 3px solid #fff; }
+
+.p-list { padding-top: 10%; width: 100%; display: flex; flex-direction: row; font-family: 'Neue Haas Grotesk Display Pro'; text-transform: uppercase;     justify-content: space-between;}
+.p-list:last-child { padding-bottom: 15%;}
+
+.p-item { flex: 1; display: flex; flex-direction: column; position: relative;}
+.p-item > .hover { position: absolute; top: 0; left: 0; opacity: 0; transition: 0.4s;}
+.p-item > .hover:hover {opacity: 1;}
+.p-item > span:nth-child(3) {     font-size: 2.4rem;
+    line-height: 2rem;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-weight: 900;}
+.p-item > span:nth-child(4) { font-size: 1.6rem; line-height: 2rem; }
+.p-item > span:nth-child(5) { font-size: 1rem; line-height: 2rem; padding-top: 20px; color: #C5C5C5; pointer-events: none;} 
+
+.p-item > img {width: 100%;}
+
+/* shop-detail */
+.shop-detail { width: 100vw; height: 100vh; overflow: scroll; position: fixed; top: 0; left: -100%; transition: 0.4s; background-color: #000; color: #fff; /* opacity: 0.3*/ z-index: 800; }
+.detail-box { width: 56.8vw; margin: 0 auto;}
+
+
+.s-back-btn { width: 100%; height: 5.4vh; border-bottom: 3px solid #fff; font-size: 2rem; font-family: 'Neue Haas Grotesk Display Pro'; font-weight: 800; background-color: #000; position: sticky; top: 0%; left: 0; padding: 30px 0; align-items: center;
+    display: flex;}
+
+.item-detail { width: 100%; display: flex; flex-direction: row; padding-top: 10%; }
+.pic-detail { flex: 1.5; overflow: scroll; }
+.detail-pic-box { width: 100%;}
+.detail-pic-box > img { width: 100%;}
+
+.text-detail {flex: 1;}
+.detail-text-box { padding: 0 10%; position: sticky; top: 50%; left: 0; display: flex; flex-direction: column; font-family: 'Neue Haas Grotesk Display Pro'; text-transform: uppercase;  }
+
+.detail-text {letter-spacing: 1px;}
+.title { font-size: 2.2rem; font-weight: 900; line-height: 3rem; }
+.option { font-size: 1.3rem; font-weight: 300; line-height: 2rem; }
+.price { font-size: 1.5rem; margin-top: 45px; font-weight: 900;}
+.p_info { color: #c5c5c5;}
+
+.detail-text-box > span { line-height: 2em; margin-top: 30px; font-family: 'Noto Sans KR', sans-serif; font-size: 1.3rem; }
+
+
+/* collabo */
+.collabo { width: 100vw; display: none; }
+.collabo-box { width: 56.8vw; margin: 0 auto;}
+.collabo-title { width: 100%; border-top: 3px solid black;
+    border-bottom: 3px solid black; }
+.collabo-title  > img { width: 100%; margin: 30px 0;}
+.x-area { width: 100%; padding: 40px 0; border-bottom: 3px solid black;}
+.collabo-item { width: 100%; /* border-top: 3px solid black; */ border-bottom: 3px solid black; display: flex; flex-direction: column; justify-content: space-between; /* align-items: center; */}
+.collabo-item > span { font-family: 'MightyDiteyNFW01-Regular'; font-size: 15.5rem; padding-top: 15px; line-height: 190px; }
+.collabo-item:last-child { margin-bottom: 10%;}
+
+.collabo-pic-box {display: none; transition: 1s; width: 0;}
+.row { /* margin-top: 10vh; */ display: flex; flex-direction: row; justify-content: space-between;}
+.row:last-child { margin-bottom: 5vh; }
+
+.two > img { width: 50%; margin: 1%;}
+.one > img {width: 100%; margin: 1%;}
+
+.startAni {transform: scaleX(1); transition-duration: 1s;}
+.active {display: block; /* transform: 1s; */ width: 100%; }
+
+
+/* .animate__animated .animate__fadeIn:first-child {animation-delay:0.2s;}
+.animate__animated .animate__fadeIn:nth-child(2) {animation-delay:0.4s;}
+.animate__animated .animate__fadeIn:nth-child(3) {animation-delay:0.8s;} */
